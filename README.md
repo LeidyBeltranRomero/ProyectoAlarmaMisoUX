@@ -1,6 +1,5 @@
-# ProyectoAlarmaMisoUX
-
-## Integrantes Grupo 15
+## EatAlarm 
+## Integrantes 
 | Nombre  | Correo |
 | ------------- | ------------- |
 | Paola Forero  | p.forerob@uniandes.edu.co  |
