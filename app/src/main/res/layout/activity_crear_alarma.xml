@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearAlarma">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:background="@drawable/back_foreground"
+        android:onClick="abrirCrearAlarma"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="178dp"
+        android:layout_height="29dp"
+        android:text="Crear Alarma"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <Button
+        android:id="@+id/flechafecha2"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:background="@drawable/deplegar_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="209dp"
+        android:layout_height="18dp"
+        android:text="Nombre Alarma"
+        android:textColor="#040404"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <EditText
+        android:id="@+id/nombreLabel"
+        android:layout_width="338dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/common_form_field"
+        android:minHeight="48dp"
+        android:paddingStart="24dp"
+        android:textColor="#565151"
+        android:textColorHint="#565151"
+        android:textSize="15sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        app:srcCompat="@+id/textView"/>
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="209dp"
+        android:layout_height="18dp"
+        android:text="Fecha"
+        android:textColor="#040404"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <EditText
+        android:id="@+id/fechaLabel"
+        android:layout_width="338dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/common_form_field"
+        android:clickable="false"
+        android:focusable="false"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:paddingStart="24dp"
+        android:textColor="#565151"
+        android:textColorHint="#565151"
+        android:textSize="15sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fecha"
+        app:srcCompat="@+id/textView" />
+
+    <Button
+        android:id="@+id/flechafecha"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:background="@drawable/deplegar_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/cantidadComidas"
+        android:layout_width="209dp"
+        android:layout_height="18dp"
+        android:text="Cantidad de Comidas"
+        android:textColor="#130F0F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="328dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textColor="#565151"
+        android:textColorHint="#565151"
+        app:backgroundTint="#E0E7FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <TextView
+        android:id="@+id/horaComida"
+        android:layout_width="209dp"
+        android:layout_height="18dp"
+        android:text="Hora de la primera comida"
+        android:textColor="#130F0F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626" />
+
+    <Spinner
+        android:id="@+id/spinnerhoraPrimeraComida"
+        android:layout_width="328dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textColor="#565151"
+        android:textColorHint="#565151"
+        app:backgroundTint="#E0E7FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
+
+    <TextView
+        android:id="@+id/horaPrimeraComida"
+        android:layout_width="314dp"
+        android:layout_height="18dp"
+        android:text="¿Cuantas veces al dias vas a comer?"
+        android:textColor="#130F0F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752"/>
+
+    <Spinner
+        android:id="@+id/spinnerVecesAlDia"
+        android:layout_width="328dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textColor="#565151"
+        android:textColorHint="#565151"
+        app:backgroundTint="#E0E7FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="114dp"
+        android:layout_height="115dp"
+        android:background="@mipmap/guar_foreground"
+        android:onClick="abrirListaAlarmas"
+        android:scrollbarDefaultDelayBeforeFade="50"
+        android:scrollbarFadeDuration="50"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="123dp"
+        android:layout_height="118dp"
+        android:background="@mipmap/cancelar_foreground"
+        android:onClick="abrirCrearAlarma"
+        android:scrollbarDefaultDelayBeforeFade="50"
+        android:scrollbarFadeDuration="50"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"/>
+
+</android.support.constraint.ConstraintLayout>
