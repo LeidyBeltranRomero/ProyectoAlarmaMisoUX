@@ -14,5 +14,10 @@
 - Para clonar el repositorio con HTTPS, en "HTTPS", haz clic
 - Abra Git Bash.
 - Cambia el directorio de trabajo actual a la ubicación en donde quieres clonar el directorio.
-- Escriba git clone y pegue la dirección URL que ha copiado antes.
+- Escriba git clone y pegue la dirección URL que ha copiado antes(https://github.com/LeidyBeltranRomero/ProyectoAlarmaMisoUX)
+- abra android studio
+- ingrese File>Open ubiquese donde descargo el proyecto
+- click en editar configuracion selecciona app
+- en android virtual device, seleccione Pixel 2 API 30(5.0 1080x1920)
+- por ultimo ejecutarlo "RUN"
 
